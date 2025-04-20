@@ -13,3 +13,8 @@ def home(request):
 def blog(request):
     posts = Post.objects.all().order_by('-date_posted')
     return render(request, 'blog/blog.html', {'posts': posts})
+
+
+# About page view
+def about(request):
+    return render(request, 'blog/about.html')
