@@ -1,16 +1,11 @@
-{% include 'blog/navbar.html' %}
-<h1>Blog Posts</h1>
+{% extends 'blog/base.html' %}
 
+{% block title %}Blog Posts{% endblock %}
+
+{% block content %}
+<h1>My Blog Posts</h1>
 {% for post in posts %}
-  <div>
     <h2>{{ post.title }}</h2>
-    <p>{{ post.date_posted }}</p>
     <p>{{ post.content }}</p>
-    {% if post.image %}
-      <img src="{{ post.image.url }}" alt="Post image" style="max-width: 400px;">
-    {% endif %}
-    <hr>
-  </div>
-{% empty %}
-  <p>No posts yet!</p>
 {% endfor %}
+{% endblock %}

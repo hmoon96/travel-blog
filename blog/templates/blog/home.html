@@ -1,3 +1,8 @@
-{% include 'blog/navbar.html' %}
-<h1>Welcome to My Travel Blog!</h1>
-<p>Click the blog tab to read about my adventures 🌍</p>
+{% extends 'blog/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to the Home Page</h1>
+<p>Some lovely intro text!</p>
+{% endblock %}
