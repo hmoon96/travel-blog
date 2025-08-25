@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --heading-font: "Merienda", serif;
+   /* --nav-font: " ", sans-serif; */
+    --body-font: "Nunito", sans-serif;
+    --primary-color:  #D97B66; /* terracotta */
+    --secondary-color: #83677A; /* lavendar */
+    --text-color: #333333; /* charcoal grey */
+    --background-color: #FAF8F5; /* soft cream */
+    --button-color: #7BA68D; /* sage green */
+}
+
+/* General Styling */
+
+h1 { 
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
