@@ -4,18 +4,36 @@
     --heading-font: "Merienda", serif;
    /* --nav-font: " ", sans-serif; */
     --body-font: "Nunito", sans-serif;
-    --primary-color:  #D97B66; /* terracotta */
+    --primary-color:  #7ba68d; /* terracotta */
     --secondary-color: #83677A; /* lavendar */
     --text-color: #333333; /* charcoal grey */
-    --background-color: #FAF8F5; /* soft cream */
+    --background-color: #f7f7f7; /* light smoke */
     --button-color: #7BA68D; /* sage green */
 }
 
 /* General Styling */
 
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
 h1 { 
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 6em;
+    margin-right: 6em;
 }
 
 p {
@@ -23,4 +41,17 @@ p {
     color: var(--text-color);
     line-height: 1.6;
     margin-bottom: 1em;
+    margin: 0 4em; 
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 1em;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    margin: 0 1em;
+    font-weight: bold;
+    font-family: var(--body-font);
 }
