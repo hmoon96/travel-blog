@@ -3,9 +3,15 @@
 {% block title %}Blog Posts{% endblock %}
 
 {% block content %}
-<h1>My Blog Posts</h1>
-{% for post in posts %}
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.content }}</p>
+<h1>Where have we been (so far)?</h1>
+
+<div class="country-grid">
+{% for country in countries %}
+    <a class="country-card" href="{% url 'country_posts' country %}">
+        {{ country }}
+    </a>
+{% empty %}
+    <p>No countries have been added yet.</p>
 {% endfor %}
+</div>
 {% endblock %}
